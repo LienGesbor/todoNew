@@ -3,10 +3,9 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL|E_STRICT);
 
-include_once("./model/db/DbConnect.php");
-include_once("./controller/RetrieveTask.php");
-include_once("./controller/DeleteTask.php");
-include_once("./view/DisplayTask.php");
+include_once("../src/model/db/DbConnect.php");
+include_once("../src/controller/RetrieveTask.php");
+include_once("../src/view/DisplayTask.php");
 
 $dbHandle = new DbConnect();
 
@@ -29,7 +28,6 @@ $dbHandle = new DbConnect();
                <ul>
                     <?php
                         DisplayTask($dbHandle);
-                        DeleteTask($dbHandle);
                     ?>
                </ul>
            </div>

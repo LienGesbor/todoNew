@@ -6,9 +6,9 @@
 
 function DeleteTask($db)
 {
-    $sql = 'DELETE FROM task WHERE id="3" ';
-    echo "yes";
-    
+    echo "Delete";
+    $sql = ' DELETE FROM task where id= 2 ';
+    return $db->query($sql);
 }
 
 ?>
