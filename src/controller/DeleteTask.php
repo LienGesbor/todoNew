@@ -1,9 +1,10 @@
 <?php
 
+
 function DeleteTask($db)
 {
-    echo "Delete";
-    $sql = ' DELETE FROM task where id= 2 ';
+    $TaskId = $_GET['id'];
+    $sql = " DELETE FROM task where id=$TaskId ";
     return $db->query($sql);
 }
 
