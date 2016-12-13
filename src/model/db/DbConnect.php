@@ -15,7 +15,7 @@ class DbConnect extends PDO
 
      function __construct()
     {
-        parent::__construct('mysql:host=localhost;dbname=todo;', 'root', 'alexel', array ('$opt'));
+        parent::__construct('mysql:host=localhost;dbname=todo;', 'root', 'alexel', $this->opt);
         echo "Connected to Database";
     }
 
