@@ -30,6 +30,11 @@ $dbHandle = new DbConnect();
                         DisplayTask($dbHandle);
                     ?>
                </ul>
+               <form action="/todo/redir/AddAndReturn.php" method="post">
+                   <input type="text" name="task_name" placeholder="Task Name">
+                   <input type="text" name="task_desc" placeholder="Task Description">
+                   <input type="submit">
+               </form>
            </div>
        </div>
         

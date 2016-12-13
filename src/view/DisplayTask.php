@@ -10,7 +10,7 @@ include_once("/home/daniel/dev/todo/src/controller/RetrieveTask.php");
     {
          foreach (RetrieveTask($db) as $row)
         {
-            echo "<li>" . $row['tsk-name'] . "<br>" . $row['tsk-desc'] . "<a id=".$row['id']." class='btn btn-danger' href='/todo/redir/DeleteAndReturn.php?id=".$row['id']."'>Delete</a>" . "</li>";
+            echo "<li>" . $row['tskName'] . "<br>" . $row['tskDesc'] . "<a id=".$row['id']." class='btn btn-danger' href='/todo/redir/DeleteAndReturn.php?id=".$row['id']."'>Delete</a>" . "</li>";
         }
     }
 
