@@ -4,9 +4,11 @@ function DeleteTask($db)
 {
     $TaskId = $_GET['id'];
 
-    $sql = " DELETE FROM task where id=$TaskId ";
+    $stmt = $db->prepare(" DELETE FROM task where id=:TaskId ");
     
-    return $db->query($sql);
+    $stmt->bindParam(":TaskId", $TaskId);
+
+    $stmt->execute();
 }
 
 ?>
