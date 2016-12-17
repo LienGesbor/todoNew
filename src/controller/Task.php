@@ -1,8 +1,25 @@
 <?php
 
+include_once('/home/daniel/dev/todo/src/model/db/DbConnect.php');
+
+
 class Task
 {
 
+    private $dbHandler;
+
+    function RetrieveTask()
+    {
+
+        $dbHandler = new DbConnect();
+
+        $sql = 'SELECT * FROM task';
+        return $dbHandler->query($sql);
+
+        $dbHandler->CloseConnection();
+
+    }
+    
     function DeleteTask()
     {
 
@@ -18,6 +35,7 @@ class Task
 
         $dbHandler->CloseConnection();
     }
+
 
 
 

@@ -4,11 +4,30 @@
 //The database is passed as a parameter.
 //The information from this function will be passed to todo/view/DisplayTask.php 
 
-function RetrieveTask($db)
+include_once("/home/daniel/dev/todo/src/model/db/DbConnect.php");
+
+class RetrieveTask
 {
-    $sql = 'SELECT * FROM task';
-    return $db->query($sql);
+
+    private $dbHandler;
+
+    function RetrieveTask()
+    {
+
+        $dbHandler = new DbConnect();
+
+        $sql = 'SELECT * FROM task';
+        return $dbHandler->query($sql);
+
+        $dbHandler->CloseConnection();
+
+    }
 
 }
+
+
+
+
+
 
 ?>

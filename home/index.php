@@ -26,7 +26,7 @@ $dbHandle = new DbConnect();
            <div class="row sub_wrapper">
                <ul>
                     <?php
-                        DisplayTask($dbHandle);
+                        DisplayTask();
                     ?>
                </ul>
                <form action="/todo/redir/AddAndReturn.php" method="post">
