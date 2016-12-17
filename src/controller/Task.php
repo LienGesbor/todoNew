@@ -1,10 +1,7 @@
 <?php
 
-include_once('../model/db/DbConnect.php');
-
-class DeleteTask
+class Task
 {
-    private $dbHandler;
 
     function DeleteTask()
     {
@@ -21,6 +18,10 @@ class DeleteTask
 
         $dbHandler->CloseConnection();
     }
+
+
+
+
 }
 
 ?>

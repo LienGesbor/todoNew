@@ -9,7 +9,6 @@ include_once("../src/view/DisplayTask.php");
 
 $dbHandle = new DbConnect();
 
-
 ?>
 
 <!DOCTYPE html>
