@@ -9,11 +9,12 @@ class Task
 
     function RetrieveTask()
     {
-
+        //Changing query into prepared statement
         $dbHandler = new DbConnect();
 
-        $sql = 'SELECT * FROM task';
-        return $dbHandler->query($sql);
+        $stmt = $dbHandler->prepare("SELECT id, tskName, tskDesc FROM task");
+        $stmt->execute();
+        return $stmt;
 
         $dbHandler->CloseConnection();
 

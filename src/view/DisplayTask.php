@@ -10,8 +10,9 @@ include_once("/home/daniel/dev/todo/src/controller/Task.php");
   function DisplayTask()
     {
         $Task = new Task();
-        
-         foreach ($Task->RetrieveTask() as $row)
+        $result = $Task->RetrieveTask()->fetchAll();
+
+         foreach ($result as $row)
         {
             echo "<li>" . $row['tskName'] . "<br>" . $row['tskDesc'] . "<a id=".$row['id']." class='btn btn-danger' href='/todo/redir/DeleteAndReturn.php?id=".$row['id']."'>Delete</a>" . "</li>";
         }
