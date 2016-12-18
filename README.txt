@@ -1,6 +1,13 @@
 Reading this is completely optional. It just provides better insight and is a way for me to organize the inner workings.
 I will get to using sanitized, prepared statements and all that security stuff once I get the dang thing actually working.
 
+I KNOW I should not use include with absolute paths because it would
+not work on other systems, but honestly whenever I tried to use relative paths
+it wouldn't work. For example, if I had directories foo, bar. Foo: foo1.php, and foo2.php.
+Bar: bar1.php, bar2.php. If in Foo/foo1.php I used require/include("../Bar/bar1.php")
+it would work. But if I did the EXACT SAME THING in foo2.php, for some reason it wouldn't.
+In the end absolute paths won.
+
 The directory structure is as follows:
 
 Home	redir	src	explanation.txt
