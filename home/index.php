@@ -1,13 +1,8 @@
-
 <?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL|E_STRICT);
 
-include_once("../src/model/db/DbConnect.php");
 include_once("../src/view/DisplayTask.php");
-
-$dbHandle = new DbConnect();
-
 ?>
 
 <!DOCTYPE html>
@@ -35,6 +30,5 @@ $dbHandle = new DbConnect();
                </form>
            </div>
        </div>
-        
     </body>
 </html>

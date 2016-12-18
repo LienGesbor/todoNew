@@ -2,7 +2,6 @@
 
 include_once('/home/daniel/dev/todo/src/model/db/DbConnect.php');
 
-
 class Task
 {
 
@@ -36,10 +35,18 @@ class Task
         $dbHandler->CloseConnection();
     }
 
+    function AddTask()
+    {
 
+        $dbHandler = new DbConnect();
+        $TaskName = $_POST['task_name'];
+        $TaskDesc = $_POST['task_desc'];
 
+        $stmt = $dbHandler->prepare ("INSERT INTO task (tskName, tskDesc) VALUES ('$TaskName', '$TaskDesc')");
+        $stmt-> execute();
 
+        $dbHandler->CloseConnection();
+    
+    }
 
 }
-
-?>

@@ -25,4 +25,3 @@ class DbConnect extends PDO
         $this->DbConnection = null;
     }
 }
-?>
