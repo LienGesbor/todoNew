@@ -1,5 +1,4 @@
 Reading this is completely optional. It just provides better insight and is a way for me to organize the inner workings.
-I will get to using sanitized, prepared statements and all that security stuff once I get the dang thing actually working.
 
 I KNOW I should not use include with absolute paths because it would
 not work on other systems, but honestly whenever I tried to use relative paths
@@ -10,7 +9,7 @@ In the end absolute paths won.
 
 The directory structure is as follows:
 
-Home	redir	src	explanation.txt
+Home	redir	src	README.txt
 
 Home:
 index.php, along with the js and css.
