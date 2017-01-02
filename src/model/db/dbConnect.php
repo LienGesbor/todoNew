@@ -1,7 +1,7 @@
 <?php
 
 // Connect to the database using PDO and MySQL
-class DbConnect extends PDO
+class dbConnect extends PDO
 {
     protected $dsn        = "mysql:host=localhost;dbname=todo;";
     protected $dbPassword = 'alexel';

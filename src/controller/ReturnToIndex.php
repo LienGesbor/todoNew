@@ -5,7 +5,7 @@ class ReturnToIndex
     function ReturnToIndex()
     {
 
-    header('Location: /todo/home');
+    header('Location: ../home');
     
     }
 }

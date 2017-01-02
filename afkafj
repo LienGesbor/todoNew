@@ -1,0 +1,89 @@
+[33mcommit 50a07ee81aec2e4e05dcbd3303c94ce4e85fe0c7[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Tue Dec 20 22:28:49 2016 -0800
+
+    Updated README.txt
+
+[33mcommit 67ccaadb6bed093d31ee02be3b3d9c2c15440700[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Sat Dec 17 22:13:24 2016 -0800
+
+    Updated README.txt
+
+[33mcommit 42121e35bc7c99d789e0db672d915d1c1d6d8d4c[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Sat Dec 17 22:08:36 2016 -0800
+
+    Changed Task->AddTask method query into prepared statement. Modified DisplayTask.php to use said prepared statement in src/view/DisplayTask.php
+
+[33mcommit e1979ca7219fcefe03ac3910fa770e98d86501e8[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Sat Dec 17 21:37:20 2016 -0800
+
+    Changed Task->AddTask query into prepared statement, deleted AddTask.php
+
+[33mcommit 2271cde63aeb68173202d59036e836b5c4bb4c37[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Sat Dec 17 00:39:02 2016 -0800
+
+    Actually Deleted RetrieveTask.php in src/controller/RetrieveTask.php
+
+[33mcommit fe23594b071d3038fa1880ae38ef70e0e4098b59[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Sat Dec 17 00:33:42 2016 -0800
+
+    Moved RetrieveTask.php method to Task.php class in src/controller/Task.php; Removed(Deleted) DeleteTask.php and RetrieveTask.php from project
+
+[33mcommit b5cbc5f7242d7ce006ff217c7ea3b87ce1f14b9f[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Fri Dec 16 23:59:42 2016 -0800
+
+    Changed DeleteTask method query into prepared PDO statement, moved method into Task.php class.
+
+[33mcommit bb0d8be105d8b60dcd64043bef7adfce936b21de[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Wed Dec 14 12:39:59 2016 -0800
+
+    Changed SQL query to PDO prepared statement in /src/controller/DeleteTask.php
+
+[33mcommit e5b6941f081a725d457301d799d5620ca0fe9c81[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Tue Dec 13 14:13:08 2016 -0800
+
+    Coded AddTask in /todo/src/controller/AddTask.php, and /todo/redir/AddAndReturn.php
+
+[33mcommit 24f8b9008d3ae6fb30f374610684978f0bbcda8b[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Tue Dec 13 13:20:52 2016 -0800
+
+    Gave DeleteTask the ability to obtain Task id from , as passed by DisplayTask.php
+
+[33mcommit 68b6372aec72a79349d52cf4abeeeae2106e94b6[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Tue Dec 13 12:41:32 2016 -0800
+
+    Fixed the  parameter in PDO Contruct in /src/model/db/DbConnect.php
+
+[33mcommit fd5eb865f65daf39dae67ec4cd515b9f33442c36[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Tue Dec 13 01:44:47 2016 -0800
+
+    Removed comments in DeleteTask.php
+
+[33mcommit 7a02b93dd55cc0693bad362acfd588c0761ea0f7[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Tue Dec 13 00:46:55 2016 -0800
+
+    Reorganized folder structure, added READMEpractice.txt, and added database confirmation for even easier debugging.
+
+[33mcommit 5f580e3f1e9743d754f7442f7b693af892f02fd0[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Mon Dec 12 20:44:13 2016 -0800
+
+    Delete unwanted directories
+
+[33mcommit 48315f0de99b43794316b45f7d613ab78635bed0[m
+Author: Alexel <umbasadoge@gmail.com>
+Date:   Mon Dec 12 20:29:05 2016 -0800
+
+    Initial commit
