@@ -1,6 +1,6 @@
 <?php
 
-include_once('/home/daniel/dev/pro/todo/src/model/db/dbConnect.php');
+include_once('..//src/model/db/DbConnect.php');
 
 class Task
 {
